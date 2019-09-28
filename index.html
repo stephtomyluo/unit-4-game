@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Demon Slayer RPG</title>
+<!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body style="background-image:url(./assets/images/demonSlayerBackground.jpg)">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-white">
+                <h1>Demon Slayer RPG</h1>
+            </div>
+        </div>
+    
+    <!-- Slayers to choose from  -->
+            <div id="slayerSelection">
+                </div>
+    
+            <div class="col-12">
+                <h2>Your Slayer</h2>
+                <div id="slayer">
+                    
+                </div>
+                <h2>Battlefield</h2>
+                <div id="fightSection">
+                    <button id="attack" class="btn btn-danger">Attack!</button>
+                </div>
+                
+                <div id="status">
+                </div>
+    
+                <button id="restart" class="btn btn-success">Restart</button>
+            </div>
+            <div class="col-12">
+                <h2>Warrior</h2>
+                <div id="opponent">
+                </div>
+                <h2>Remaining Opponents</h2>
+                <div id="opponentArea">
+    
+                </div>
+            </div>
+            
+    <!-- Container div  -->
+        </div>
+<!-- Javascript  -->
+	<script src="assets/javascript/game.js"></script>
+</body>
+</html>
