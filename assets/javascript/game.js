@@ -19,7 +19,7 @@ function startGame() {
 	tanjiro = {
 		id: 0,
 		name: "Tanjiro Kamado",
-		health: 150,
+		health: 125,
 		incrAttack: 10,
 		attack: 8,
 		counterAttack: 20,
@@ -29,7 +29,7 @@ function startGame() {
 	nezuko = {
 		id: 1,
 		name: "Nezuko Kamado",
-		health: 180,
+		health: 150,
 		incrAttack: 7,
 		attack: 17,
 		counterAttack: 25,
@@ -70,10 +70,10 @@ function startGame() {
 	muzan = {
 		id: 5,
 		name: "Muzan Kibutsuji",
-		health: 100,
-		incrAttack: 10,
-		attack: 10,
-		counterAttack: 25,
+		health: 160,
+		incrAttack: 20,
+		attack: 5,
+		counterAttack: 15,
 		img:"./assets/images/muzanKibutsuji.jpg"
 	}
         
