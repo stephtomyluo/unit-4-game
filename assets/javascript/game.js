@@ -19,7 +19,7 @@ function startGame() {
 	tanjiro = {
 		id: 0,
 		name: "Tanjiro Kamado",
-		health: 125,
+		health: 225,
 		incrAttack: 10,
 		attack: 8,
 		counterAttack: 20,
@@ -29,7 +29,7 @@ function startGame() {
 	nezuko = {
 		id: 1,
 		name: "Nezuko Kamado",
-		health: 150,
+		health: 250,
 		incrAttack: 7,
 		attack: 17,
 		counterAttack: 25,
@@ -39,7 +39,7 @@ function startGame() {
 	inosuke = {
 		id: 2,
 		name: "Inosuke Hashibira",
-		health: 120,
+		health: 210,
 		incrAttack: 13,
 		attack: 8,
 		counterAttack: 15,
@@ -49,7 +49,7 @@ function startGame() {
 	zenitsu = {
 		id: 3,
 		name: "Zenitsu Agatsuma",
-		health: 100,
+		health: 195,
 		incrAttack: 10,
 		attack: 10,
 		counterAttack: 25,
@@ -60,7 +60,7 @@ function startGame() {
 	giyu = {
 		id: 4,
 		name: "Giyu Tomioka",
-		health: 130,
+		health: 230,
 		incrAttack: 16,
 		attack: 10,
 		counterAttack: 25,
@@ -70,7 +70,7 @@ function startGame() {
 	muzan = {
 		id: 5,
 		name: "Muzan Kibutsuji",
-		health: 160,
+		health: 215,
 		incrAttack: 20,
 		attack: 5,
 		counterAttack: 15,
