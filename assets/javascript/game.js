@@ -23,7 +23,7 @@ function startGame() {
 		incrAttack: 10,
 		attack: 8,
 		counterAttack: 20,
-		img:"assets/images/tanjirokamado.jpg"
+		img:"./assets/images/tanjiroKamado.jpg"
 	},
 
 	nezuko = {
@@ -33,7 +33,7 @@ function startGame() {
 		incrAttack: 7,
 		attack: 17,
 		counterAttack: 25,
-		img:"./assets/images/nezukokamado.jpg"
+		img:"./assets/images/nezukoKamado.jpg"
 	},
 
 	inosuke = {
@@ -43,7 +43,7 @@ function startGame() {
 		incrAttack: 13,
 		attack: 8,
 		counterAttack: 15,
-		img:"./assets/images/inosukehashibira.jpg"
+		img:"./assets/images/inosukeHashibira.jpg"
 	},
 
 	zenitsu = {
@@ -53,7 +53,7 @@ function startGame() {
 		incrAttack: 10,
 		attack: 10,
 		counterAttack: 25,
-		img:"./assets/images/zenitsuagatsuma.jpg"
+		img:"./assets/images/zenitsuAgatsuma.jpg"
 
 	},
 	
@@ -64,7 +64,7 @@ function startGame() {
 		incrAttack: 16,
 		attack: 10,
 		counterAttack: 25,
-		img:"./assets/images/giyutomioka.jpg"
+		img:"./assets/images/giyuTomioka.jpg"
 	},
 
 	muzan = {
@@ -74,7 +74,7 @@ function startGame() {
 		incrAttack: 10,
 		attack: 10,
 		counterAttack: 25,
-		img:"./assets/images/muzankibutsuji.jpg"
+		img:"./assets/images/muzanKibutsuji.jpg"
 	}
         
 // Resetting
