@@ -14,6 +14,8 @@ var opponent = null;
 
 function startGame() {
 
+	alert('Choose your warrior!')
+
 	tanjiro = {
 		id: 0,
 		name: "Tanjiro Kamado",
@@ -89,7 +91,7 @@ function startGame() {
 
 $.each(slayerSelection, function(index, slayer) {
 // New div displaying slayers at start of game
-	var newSlayerDiv = $("<div>").addClass("slayer card", "col-4").attr("id",slayer.id);
+	var newSlayerDiv = $("<div>").addClass("slayer card-group").attr("id",slayer.id);
 
 	$("<div>").addClass("card-heading").html(slayer.name).appendTo(newSlayerDiv);
 	$("<div>").addClass("card-body").append("<img src='" + slayer.img + "'>").appendTo(newSlayerDiv);
@@ -108,7 +110,7 @@ $(".slayer").on("click", function() {
 		$.each(slayerSelection, function(index, slayer) {
 			if(slayer.id != slayId) {
 				opponents.push(slayer);
-				$("#"+slayer.id).removeClass("slayer card-success").addClass("opponent card col-12").appendTo("#opponentArea");
+				$("#"+slayer.id).removeClass("slayer card").addClass("opponent card col-12").appendTo("#opponentArea");
 			} else {
 				$("#"+slayer.id).appendTo("#slayer");
 			}
@@ -158,7 +160,7 @@ console.log("Slayer: ",slayer.name,slayer.health);
 	status = "You've failed to defeat your opponent. FOR SHAME!";
 	$("#restart").show();
 		} else if(opponent.health <= 0) {	
-		status = "You have defeated " + opponent.name + ", is that all you've got? Take on another challenge!";
+		status = "You have defeated " + opponent.name + ", is that all you've got? Take on another challenger!";
 
 		$("#opponent").empty();
 		opponent = null;
