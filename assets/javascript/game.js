@@ -19,10 +19,10 @@ function startGame() {
 	tanjiro = {
 		id: 0,
 		name: "Tanjiro Kamado",
-		health: 225,
-		incrAttack: 10,
+		health: 217,
+		incrAttack: 14,
 		attack: 8,
-		counterAttack: 20,
+		counterAttack: 16,
 		img:"./assets/images/tanjiroKamado.jpg"
 	},
 
@@ -32,7 +32,7 @@ function startGame() {
 		health: 250,
 		incrAttack: 7,
 		attack: 17,
-		counterAttack: 25,
+		counterAttack: 18,
 		img:"./assets/images/nezukoKamado.jpg"
 	},
 
@@ -51,8 +51,8 @@ function startGame() {
 		name: "Zenitsu Agatsuma",
 		health: 195,
 		incrAttack: 10,
-		attack: 10,
-		counterAttack: 25,
+		attack: 15,
+		counterAttack: 21,
 		img:"./assets/images/zenitsuAgatsuma.jpg"
 
 	},
@@ -61,9 +61,9 @@ function startGame() {
 		id: 4,
 		name: "Giyu Tomioka",
 		health: 230,
-		incrAttack: 16,
+		incrAttack: 8,
 		attack: 10,
-		counterAttack: 25,
+		counterAttack: 12,
 		img:"./assets/images/giyuTomioka.jpg"
 	},
 
