@@ -13,6 +13,7 @@ var opponents = [];
 var opponent = null;
 
 function startGame() {
+
 	tanjiro = {
 		id: 0,
 		name: "Tanjiro Kamado",
@@ -88,7 +89,7 @@ function startGame() {
 
 $.each(slayerSelection, function(index, slayer) {
 // New div displaying slayers at start of game
-	var newSlayerDiv = $("<div>").addClass("slayer card").attr("id",slayer.id);
+	var newSlayerDiv = $("<div>").addClass("slayer card", "col-4").attr("id",slayer.id);
 
 	$("<div>").addClass("card-heading").html(slayer.name).appendTo(newSlayerDiv);
 	$("<div>").addClass("card-body").append("<img src='" + slayer.img + "'>").appendTo(newSlayerDiv);
@@ -107,7 +108,7 @@ $(".slayer").on("click", function() {
 		$.each(slayerSelection, function(index, slayer) {
 			if(slayer.id != slayId) {
 				opponents.push(slayer);
-				$("#"+slayer.id).removeClass("slayer card-success").addClass("opponent card").appendTo("#opponentArea");
+				$("#"+slayer.id).removeClass("slayer card-success").addClass("opponent card col-12").appendTo("#opponentArea");
 			} else {
 				$("#"+slayer.id).appendTo("#slayer");
 			}
