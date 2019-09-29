@@ -4,6 +4,8 @@ var tanjiro;
 var nezuko;
 var inosuke;
 var zenitsu;
+var giyu;
+var muzan;
 
 var slayerSelection = [];
 var slayer = null;
@@ -103,7 +105,7 @@ $(".slayer").on("click", function() {
 		slayer = slayerSelection[slayId];
 // Loop through slayer array
 		$.each(slayerSelection, function(index, slayer) {
-			if(slayer.id !== slayId) {
+			if(slayer.id != slayId) {
 				opponents.push(slayer);
 				$("#"+slayer.id).removeClass("slayer card-success").addClass("opponent card").appendTo("#opponentArea");
 			} else {
@@ -134,7 +136,7 @@ $("#attack").on("click", function() {
 	var status = "";
 
 // When opponent has been selected, decr opponent HP by slayer attack power & update opponent HP
-	if(opponent !== null) {
+	if(opponent != null) {
 	opponent.health -= slayer.attack;
 	status += "You hit " + opponent.name + " with " + slayer.attack + " damage.<br>";
 	$("#"+opponent.id + " .hp").html(opponent.health);
