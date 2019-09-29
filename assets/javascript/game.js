@@ -14,19 +14,19 @@ function startGame() {
 	tanjiro = {
 		id: 0,
 		name: "Tanjiro Kamado",
-		health: 100,
-		incrAttack: 3,
-		attack: 9,
-		counterAttack: 18,
+		health: 110,
+		incrAttack: 15,
+		attack: 5,
+		counterAttack: 10,
 		img:"assets/images/tanjirokamado.jpg"
 	},
 
 	nezuko = {
 		id: 1,
 		name: "Nezuko Kamado",
-		health: 100,
-		incrAttack: 5,
-		attack: 10,
+		health: 125,
+		incrAttack: 20,
+		attack: 5,
 		counterAttack: 15,
 		img:"assets/images/nezukokamado.jpg"
 	},
@@ -34,20 +34,20 @@ function startGame() {
 	inosuke = {
 		id: 2,
 		name: "Inosuke Hashibira",
-		health: 100,
-		incrAttack: 6,
-		attack: 12,
-		counterAttack: 24,
+		health: 105,
+		incrAttack: 20,
+		attack: 10,
+		counterAttack: 5,
 		img:"assets/images/inosukehashibira.jpg"
 	},
 
 	zenitsu = {
 		id: 3,
 		name: "Zenitsu Agatsuma",
-		health: 100,
-		incrAttack: 2,
-		attack: 8,
-		counterAttack: 16,
+		health: 95,
+		incrAttack: 5,
+		attack: 10,
+		counterAttack: 25,
 		img:"assets/images/zenitsuagatsuma.jpg"
     }
         
@@ -132,7 +132,6 @@ console.log("Slayer: ",slayer.name,slayer.health);
 // Loss scenario
 	if(slayer.health <= 0) {
 	status = "You've failed to defeat your opponent. FOR SHAME!";
-	
 	$("#restart").show();
 		} else if(opponent.health <= 0) {	
 		status = "You have defeated " + opponent.name + ", is that all you've got? Take on another challenge!";
@@ -150,7 +149,7 @@ console.log("Slayer: ",slayer.name,slayer.health);
 			$("#restart").show();
 			}
 		} else {
-			status = "No enemy here.";
+			status = "Do you intend to fight yourself?";
 		}
 
 			$("#status").html(status);
