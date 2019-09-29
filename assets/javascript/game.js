@@ -14,30 +14,30 @@ function startGame() {
 	tanjiro = {
 		id: 0,
 		name: "Tanjiro Kamado",
-		health: 125,
+		health: 150,
 		incrAttack: 10,
-		attack: 5,
-		counterAttack: 10,
+		attack: 8,
+		counterAttack: 20,
 		img:"assets/images/tanjirokamado.jpg"
 	},
 
 	nezuko = {
 		id: 1,
 		name: "Nezuko Kamado",
-		health: 150,
-		incrAttack: 5,
-		attack: 15,
-		counterAttack: 15,
+		health: 180,
+		incrAttack: 7,
+		attack: 17,
+		counterAttack: 25,
 		img:"assets/images/nezukokamado.jpg"
 	},
 
 	inosuke = {
 		id: 2,
 		name: "Inosuke Hashibira",
-		health: 115,
-		incrAttack: 15,
-		attack: 10,
-		counterAttack: 5,
+		health: 120,
+		incrAttack: 13,
+		attack: 8,
+		counterAttack: 15,
 		img:"assets/images/inosukehashibira.jpg"
 	},
 
@@ -49,13 +49,34 @@ function startGame() {
 		attack: 10,
 		counterAttack: 25,
 		img:"assets/images/zenitsuagatsuma.jpg"
-    }
+
+	},
+	
+	giyu = {
+		id: 4,
+		name: "Giyu Tomioka",
+		health: 130,
+		incrAttack: 16,
+		attack: 10,
+		counterAttack: 25,
+		img:"assets/images/giyutomioka.jpg"
+	},
+
+	muzan = {
+		id: 5,
+		name: "Muzan Kibutsuji",
+		health: 100,
+		incrAttack: 10,
+		attack: 10,
+		counterAttack: 25,
+		img:"assets/images/muzankibutsuji.jpg"
+	}
         
 // Resetting
 	slayer = null;
 	opponents = [];
 	opponent = null;
-	slayerSelection = [tanjiro, nezuko, inosuke, zenitsu];
+	slayerSelection = [tanjiro, nezuko, inosuke, zenitsu, giyu, muzan];
 
 // Empties divs 
 	$("#slayer").empty();
