@@ -19,43 +19,37 @@
             <h1>Demon Slayer RPG</h1>
         </div>
     </div>
-    
 <!-- Slayers to choose from  -->
-<div class="row">
-    <div id="slayerSelection">
-        </div>
-<!-- Chosen slayer & battlefield  -->
-<div class="bg-danger">
-    <h2>Your Slayer</h2>
-<!-- Chosen slayer  -->
-<div id="slayer">     
-    </div>
-        <h2>Battlefield</h2>
-<!-- Attack button  -->
-<div id="fightSection">
-    <button id="attack" class="btn btn-dark">Attack!</button>
-        </div>
-<!-- Fight status  -->
-<div id="status">
-    </div>
-<!-- Restart game  -->
-    <button id="restart" class="btn btn-dark">Restart</button>
-</div>
+    <div class="row text-white">
+        <div id="slayerSelection">
 
-<!-- Chosen & remaining enemies  -->
-<div class="bg-danger">
-    <h2>Warrior</h2>
-<!-- Chosen  -->
-<div id="opponent">
+        </div>
     </div>
-</div>
 
-    <h2>Remaining Opponents</h2>
-<!-- Remaining  -->
-<div id="opponentArea">
-    </div>
-</div>
-       
+    <div class="row">
+        <div class="battlefield text-white">
+            <h3 class="text-white">Your Chosen Warrior</h3>
+            <div id="slayer">
+
+            </div>
+            <button id="attack" class="btn btn-danger">Attack!</button>
+            <div id="status"></div>
+            <button id="restart" class="btn btn-danger">Restart</button>
+        </div>
+
+        <div class="battlefield">
+            <h3 class="text-white">Sworn Enemy</h3>
+            <div id="opponent"></div>
+        </div>
+        </div>
+
+        <div class="row">
+            <h3 class="text-white col-12">Remaining Foes</h3>
+
+            <div id="opponentArea">
+                    </div>
+        </div>
+  
 <!-- Container div  -->
 </div>
 <!-- Javascript  -->
