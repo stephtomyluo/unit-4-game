@@ -91,7 +91,7 @@ function startGame() {
 
 $.each(slayerSelection, function(index, slayer) {
 // New div displaying slayers at start of game
-	var newSlayerDiv = $("<div>").addClass("slayer card-group").attr("id",slayer.id);
+	var newSlayerDiv = $("<div>").addClass("slayer card-group card").attr("id",slayer.id);
 
 	$("<div>").addClass("card-heading").html(slayer.name).appendTo(newSlayerDiv);
 	$("<div>").addClass("card-body").append("<img src='" + slayer.img + "'>").appendTo(newSlayerDiv);
